@@ -13,12 +13,38 @@ header {
 
 .logo {
 	float: left;
-	width: 20%;
+	max-width: 100%;
+	height: auto;
 }
 
 .banner {
 	float: right;
 	width: 80%;
+	height: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	background-image: url("assets/oak.jpg");
+}
+
+ul.nav {
+	margin-top: 3%;
+	padding-left: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(255, 255, 255, .5);
+	text-align: center;
+	font-size: large;
+  }
+ul.nav > li {
+	display: inline-block;
+	padding: 10px 20px;
+}
+ul.nav > li:hover {
+	background-color: rgba(255, 255, 255, .8);
+}
+ul.nav > li > a {
+	color: white;
+	text-decoration: none;
 }
 
 aside {
