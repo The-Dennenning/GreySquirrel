@@ -4,7 +4,8 @@ body{
 
 header {
 	width: 100%;
-	height: 20%;
+	height: 15%;
+	min-height: 15%;
 
 	font-family: 'Ubuntu', sans-serif;
 	letter-spacing: 2px;
@@ -19,15 +20,36 @@ header {
 
 .banner {
 	float: right;
-	width: 80%;
+	width: 85%;
 	height: 100%;
 	overflow-y: hidden;
 	overflow-x: hidden;
 	background-image: url("assets/oak.jpg");
 }
 
+aside {
+	float: left;
+	width: 15%;
+	background-color: black;
+	font-family: 'Nunito', sans-serif;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+content {
+
+	float: right;
+	width: 75%;
+
+	padding: 2%;
+	height: 70%;
+	font-family: 'Nunito', sans-serif;
+
+	overflow-y: scroll
+}
+
 ul.nav {
-	margin-top: 3%;
+	margin-top: 2%;
 	padding-left: 0px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -46,28 +68,6 @@ ul.nav > a {
 	color: white;
 	text-decoration: none;
 }
-
-aside {
-	float: left;
-	width: 20%;
-	background-color: black;
-	font-family: 'Nunito', sans-serif;
-	overflow-y: hidden;
-	overflow-x: hidden;
-}
-
-content {
-
-	float: right;
-	width: 75%;
-
-	padding: 2%;
-	height: 80%;
-	font-family: 'Nunito', sans-serif;
-
-	overflow-y: scroll
-}
-
 
 iframe {
 	border: none;

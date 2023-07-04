@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>
+        Grey Squirrel Handmade
+    </title>
+    <link href="../../style_page.css" rel="stylesheet" type="text/css"/>
+    <link href="../../style_gallery.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Ubuntu&amp;display=swap" rel="stylesheet"/>
+    <link href="html/assets/icon.png" rel="icon"/>
+
+    <script>
+        function getPics() {
+        const imgs = document.querySelectorAll('.pic_gallery img');
+        const fullPage = document.querySelector('#fullpage');
+        
+        imgs.forEach(img => {
+          img.addEventListener('click', function() {
+            fullPage.style.backgroundImage = 'url(' + img.src + ')';
+            fullPage.style.display = 'block';
+          });
+        });
+    }
+    </script>
+
+</head>
+
+
+<body onload="getPics()">
+
+    <aside>
+        <a href="../../../index.html"><img src="../../assets/logo.jpg" class="logo"/></a>
+        <img src="../../assets/setup.jpg"/>
+    </aside>
+
+    <header>
+        <div class="banner">
+            <ul class="nav">
+                <a href="../../listings.html"><li>Store Listings</li></a>
+                <a href="../../gallery.html"><li>Photo Gallery</li></a>
+                <a href="../../biography.html"><li>Biography</li></a>
+                <a href="../../../index.html"><li>Contact Me</li></a>
+            </ul>
+        </div>
+    
+    </header>
+  
+    <content class="pic_gallery">
+        <img class="pic" src="pics/1.jpg"/>
+        <img class="pic" src="pics/2.jpg"/>
+        <img class="pic" src="pics/3.jpg"/>
+        <img class="pic" src="pics/4.jpg"/>
+        <img class="pic" src="pics/5.jpg"/>
+        <img class="pic" src="pics/6.jpg"/>
+        <img class="pic" src="pics/7.jpg"/>
+        <img class="pic" src="pics/8.jpg"/>
+        <img class="pic" src="pics/9.jpg"/>
+        <img class="pic" src="pics/10.jpg"/>
+        <img class="pic" src="pics/11.jpg"/>
+        <img class="pic" src="pics/12.jpg"/>
+        <img class="pic" src="pics/13.jpg"/>
+    </content>
+    <div id="fullpage" onclick="this.style.display='none';"></div>
+</body>
+</html>

@@ -4,7 +4,10 @@
         Grey Squirrel Handmade
     </title>
 
-    <script>function gallery_link(name){window.location.href = "Galleries/" + name + "/Gallery.html";}</script>
+    <script>
+        function gallery_link(name){window.location.href = "galleries/" + name + "/pic_gallery.html";}
+    </script>
+
     <link href="style_page.css" rel="stylesheet" type="text/css"/>
     <link href="style_gallery.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Nunito|Ubuntu&amp;display=swap" rel="stylesheet"/>
@@ -36,7 +39,7 @@
         <div class="box" onclick="gallery_link('Bar_Stools')" style="background: url('assets/gallery_assets/bs1.jpg');"><div class="box-text"><h3>Bar Stools</h3></div></div>
         <div class="box" style="background: url('assets/gallery_assets/kb1.jpg');"><div class="box-text"><h3>Keepsake Boxes</h3></div></div>
         <div class="box" style="background: url('assets/gallery_assets/l1.jpg');"><div class="box-text"><h3>Lamps</h3></div></div>
-        <div class="box" style="background: url('assets/gallery_assets/wc3.jpg');"><div class="box-text"><h3>Wind Chimes</h3></div></div>
+        <div class="box" onclick="gallery_link('Wind_Chimes')" style="background: url('assets/gallery_assets/wc3.jpg');"><div class="box-text"><h3>Wind Chimes</h3></div></div>
         <div class="box" style="background: url('assets/gallery_assets/an1.jpg');"><div class="box-text"><h3>Antler Jewelry Hangers</h3></div></div>
         <div class="box" style="background: url('assets/gallery_assets/bo1.jpg');"><div class="box-text"><h3>Bottle Openers</h3></div></div>
 

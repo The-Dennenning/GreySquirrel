@@ -41,7 +41,7 @@
 }
 
 .box:hover:after{
-	background: linear-gradient(to bottom, rgba(82, 103, 108, .01) 0, rgba(82, 103, 108, .25) 25%, rgba(82, 103, 108, .50) 50%, rgba(82, 103, 108, .75) 75%, rgba(82, 103, 108, .95) 100%);
+	background: linear-gradient(to bottom, rgba(96, 108, 82, 0.01) 0, rgba(96, 108, 82, 0.25) 25%, rgba(96, 108, 82, 0.5) 50%, rgba(95, 108, 82, 0.75) 75%, rgba(95, 108, 82, 0.95) 100%);
 }
 
 .box-text{
@@ -49,8 +49,37 @@
 	bottom: 0;
 	z-index: 1;
 	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .box-text:hover{
 	color: rgba(255, 255, 255, 1);
+}
+
+
+#fullpage {
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-size: contain;
+	background-repeat: no-repeat no-repeat;
+	background-position: center center;
+	background-color: black;
+  }
+
+.pic {
+	margin: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 20px; 
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.pic:hover {
+	box-shadow: 0 0 2px 1px rgba(45, 112, 0, 0.5);
 }
